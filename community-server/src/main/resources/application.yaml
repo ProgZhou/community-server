@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: community-server
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://123.249.47.211:3306/game_community?rewriteBatchedStatements=true&characterEncoding=utf8&useOldAliasMetadataBehavior=true
+    username: root
+    password: docker123456
+  redis:
+    host: 123.249.47.211
+    port: 6379
+    password: redis123456
+    lettuce:
+      pool:
+        enabled: true
+        min-idle: 10
+  kafka:
+    bootstrap-servers: 123.249.47.211:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.StringSerializer
+      acks: all
+
+
+server:
+  port: 8888
+
+#mybatis??
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath*:/mapper/*.xml
