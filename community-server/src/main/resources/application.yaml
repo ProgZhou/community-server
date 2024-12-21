@@ -15,11 +15,12 @@ spring:
       pool:
         enabled: true
         min-idle: 10
+    expireTime: 60   #默认过期时间
   kafka:
     bootstrap-servers: 123.249.47.211:9092
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.springframework.kafka.support.serializer.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
       acks: all
 
 
