@@ -15,7 +15,7 @@
     <thor.version>0.0.1-SNAPSHOT</thor.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <springboot.version>2.7.11</springboot.version>
+    <springboot.version>2.7.18</springboot.version>
     <java.version>11</java.version>
   </properties>
 

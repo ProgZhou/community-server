@@ -2,9 +2,6 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.progzhou.community.mapper.ArticleBasicInfoMapper">
-    <resultMap id="articleInfoResultMap" type="com.progzhou.community.entity.article.ArticleInfo">
-
-    </resultMap>
 
 
 </mapper>
