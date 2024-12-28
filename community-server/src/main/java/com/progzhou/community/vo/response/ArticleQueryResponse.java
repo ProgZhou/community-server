@@ -12,7 +12,11 @@ import java.util.List;
 @NoArgsConstructor
 public class ArticleQueryResponse implements Serializable {
 
+    //如果是已发布的文章，则填充这个字段
     private String articleId;
+
+    //如果是还在审核的文章，则填充这个字段
+    private String postId;
 
     private String title;
 

@@ -28,6 +28,9 @@ public class ArticlePostEntity extends BaseEntity {
     @TableField("author_avatar")
     private String authorAvatar;
 
+    @TableField("post_type")
+    private Integer postType;
+
     private String category;
 
     private String images;

@@ -32,3 +32,7 @@ mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
   mapper-locations: classpath*:/mapper/*.xml
+
+page-request:
+  page: 1
+  size: 20

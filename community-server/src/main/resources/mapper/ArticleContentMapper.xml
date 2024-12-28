@@ -13,6 +13,22 @@
     <select id="selectByArticleBasicInfoId" resultMap="articleContentResultMap" parameterType="string">
         select id, article_id, post_id, content, images, create_time, update_time
         from tbl_article_content
-        where article_id = #{articleId}
+        where article_id = #{articleId} and deleted = '0'
+    </select>
+
+    <select id="selectByPostId" resultMap="articleContentResultMap" parameterType="string">
+        select id, article_id, post_id, content, images, create_time, update_time
+        from tbl_article_content
+        where post_id = #{postId} and deleted = '0'
+    </select>
+
+    <select id="selectByPostIds" resultMap="articleContentResultMap" >
+        select id, article_id, post_id, content, images, create_time, update_time
+        from tbl_article_content
+        where post_id in 
+        <foreach collection="postIds" item="postId" open="(" separator="," close=")">
+            #{postId}
+        </foreach>
+        and deleted = '0'
     </select>
 </mapper>

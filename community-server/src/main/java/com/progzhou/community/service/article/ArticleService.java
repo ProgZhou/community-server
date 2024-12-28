@@ -1,7 +1,7 @@
 package com.progzhou.community.service.article;
 
-import com.baomidou.mybatisplus.extension.service.IService;
-import com.progzhou.community.vo.request.ArticleQueryRequest;
+import com.progzhou.community.common.QueryPageInfo;
+import com.progzhou.community.vo.request.ArticleQueryInfo;
 import com.progzhou.community.vo.response.ArticleQueryResponse;
 
 public interface ArticleService {
@@ -11,8 +11,12 @@ public interface ArticleService {
      * @param request
      * @return
      */
-    ArticleQueryResponse getArticleWithArticleId(ArticleQueryRequest request) throws Exception;
+    ArticleQueryResponse getArticleWithArticleId(ArticleQueryInfo request);
 
-
-
+    /**
+     *
+     * @param request
+     * @return
+     */
+    QueryPageInfo<ArticleQueryResponse> getCurrentUserArticle(ArticleQueryInfo request);
 }

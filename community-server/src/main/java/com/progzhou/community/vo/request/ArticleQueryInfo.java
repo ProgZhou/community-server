@@ -14,7 +14,7 @@ import java.io.Serializable;
  */
 @Data
 @NoArgsConstructor
-public class ArticleQueryRequest extends PageInfo implements Serializable {
+public class ArticleQueryInfo extends PageInfo implements Serializable {
 
     @NotNull(message = "base不能为空")
     @Valid
