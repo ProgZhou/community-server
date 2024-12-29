@@ -1,4 +1,4 @@
-package com.progzhou.community.common;
+package com.progzhou.community.common.request;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

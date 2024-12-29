@@ -1,4 +1,4 @@
-package com.progzhou.community.common;
+package com.progzhou.community.common.entity;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;

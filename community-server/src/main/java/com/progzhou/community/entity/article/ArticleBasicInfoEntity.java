@@ -2,7 +2,7 @@ package com.progzhou.community.entity.article;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
-import com.progzhou.community.common.BaseEntity;
+import com.progzhou.community.common.entity.BaseEntity;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.format.annotation.DateTimeFormat;

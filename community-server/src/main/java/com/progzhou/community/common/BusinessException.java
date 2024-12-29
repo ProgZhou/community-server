@@ -3,12 +3,19 @@ package com.progzhou.community.common;
 public class BusinessException extends RuntimeException {
     private static final long serialVersionUID = 1L;
 
+    private String traceId;
     private String msg;
     private int code = 500;
 
     public BusinessException(String msg) {
         super(msg);
         this.msg = msg;
+    }
+
+    public BusinessException(String msg, String traceId) {
+        super(msg);
+        this.msg = msg;
+        this.traceId = traceId;
     }
 
     public BusinessException(String msg, Throwable e) {
@@ -20,6 +27,12 @@ public class BusinessException extends RuntimeException {
         super(msg);
         this.msg = msg;
         this.code = code;
+    }
+    public BusinessException(String msg, int code, String traceId) {
+        super(msg);
+        this.msg = msg;
+        this.code = code;
+        this.traceId = traceId;
     }
 
     public BusinessException(String msg, int code, Throwable e) {
@@ -42,6 +55,13 @@ public class BusinessException extends RuntimeException {
 
     public void setCode(int code) {
         this.code = code;
+    }
+
+    public String getTraceId() {
+        return this.traceId;
+    }
+    public void setTraceId(String traceId) {
+        this.traceId = traceId;
     }
 
 

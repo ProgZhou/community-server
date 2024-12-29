@@ -1,7 +1,7 @@
 package com.progzhou.community.vo.request;
 
-import com.progzhou.community.common.BaseInfo;
-import com.progzhou.community.common.PageInfo;
+import com.progzhou.community.common.request.BaseInfo;
+import com.progzhou.community.common.entity.PageInfo;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

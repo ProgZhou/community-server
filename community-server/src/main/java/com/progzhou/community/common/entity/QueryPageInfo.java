@@ -1,4 +1,4 @@
-package com.progzhou.community.common;
+package com.progzhou.community.common.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

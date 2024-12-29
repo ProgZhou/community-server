@@ -1,5 +1,6 @@
-package com.progzhou.community.common;
+package com.progzhou.community.common.response;
 
+import com.progzhou.community.common.ApiResponseCodeEnum;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -68,6 +69,10 @@ public class CommonResult<T> implements Serializable {
 
     public static <T> CommonResult<T> success(String traceId, T data) {
         return new CommonResult<>(traceId, ApiResponseCodeEnum.SUCCESS.getCode(), ApiResponseCodeEnum.SUCCESS.getMessage(), data);
+    }
+
+    public static <T> CommonResult<T> fail(String traceId, Integer code, String message) {
+        return new CommonResult<>(traceId, code, message);
     }
 
 }

@@ -27,6 +27,15 @@ public interface ArticleContentMapper extends BaseMapper<ArticleContentEntity> {
     ArticleContentEntity selectByPostId(String postId);
 
     /**
+     * 根据文章id查询文章内容
+     *
+     * @param articleId
+     * @return
+     */
+    ArticleContentEntity selectByArticleId(String articleId);
+
+
+    /**
      * 根据postId批量查询
      *
      * @param postIds
