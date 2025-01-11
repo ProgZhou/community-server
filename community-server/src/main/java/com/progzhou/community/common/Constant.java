@@ -16,4 +16,9 @@ public class Constant {
         public static final String CATEGORY = "category";
     }
 
+    public static class RedisCache {
+        public static final String ARTICLE_VIEW_COUNT_PREFIX = "article:view:count:";
+        public static final String ARTICLE_QUERY_CACHE_PREFIX = "article:query:";
+    }
+
 }
